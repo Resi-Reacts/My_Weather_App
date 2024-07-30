@@ -1,38 +1,164 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family:"Roboto Condensed", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container{
+  width: 350px;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(175, 184, 195);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cityInput{
+flex: 1;
+height: 30px;
+border: none;
+font-size: 16px;
+outline: none;
+padding: 10px;
+}
+
+.Search-icon{
+  padding-top: 0px;
+  padding-bottom: 35px;
+  height: 10px;
+  cursor: pointer;
+
+}
+
+.Search-icon img {
+ margin: 5px;
+}
+
+.image{
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+
+}
+
+.image img {
+  width: 160px;
+  height: 160px;
+}
+
+.temp,
+.location,
+.country{
+  margin-top: 5px;
+  font-size: 35px;
+  color: black;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temp{
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.location{
+  color: rgb(234, 139, 14);
+  font-weight: 400;
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.country{
+  font-size: 18px;
+  color: rgb(60, 60, 54);
+  font-weight: 500;
+}
+
+.cord{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.cord div {
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.humidity-percent,
+.cord div span:nth-child(2){
+font-size: 18px;
+font-weight: bold;
+color: #666;
+padding-top: 5px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.element{
+
+  text-align: center;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+text{
+  font-size: 12px;
+  color: #888;
+}
+
+.copyright{
+
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+
+.copyright span {
+  color: #333;
+}
+
+.City-notfound,
+.error-message,
+.loading-message{
+margin-top: 10px;
+color: #888;
+font-size: 25px;
+font-weight: 400;
+text-align: center;
+
 }
